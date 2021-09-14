@@ -62,7 +62,7 @@ public class GUI{
     public GUI(Property[] properties) throws FontFormatException, IOException {
         
         //Monopoly font
-        File informationFont = new File("Kabel-Heavy.ttf");
+        File informationFont = new File("resources/Kabel-Heavy.ttf");
         Font font = Font.createFont(Font.TRUETYPE_FONT, informationFont);
         //different font sizes
         Font regularFont = font.deriveFont(9f);
@@ -105,7 +105,7 @@ public class GUI{
                 //variables with info for this button
                 Property thisProperty = properties[nameTracker];
                 String currentName = properties[nameTracker].getName().toUpperCase();
-                String current = currentName + ".jpg";
+                String current = "resources/images/" + currentName + ".jpg";
                 ImageIcon icon = new ImageIcon(current);
                 Image image = icon.getImage();  
                 Image resizedImage = image.getScaledInstance(30, 30, java.awt.Image.SCALE_SMOOTH);

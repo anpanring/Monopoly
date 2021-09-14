@@ -121,7 +121,7 @@ public class PMonopoly implements ActionListener{
                 propertyNames.add(p.getName().toUpperCase());
             }
         }
-        System.out.println(propertyNames);
+        //System.out.println(propertyNames);
         gui = new GUI(propertiesForGUI);
         //action listener must be added to this class not GUI because when roll is pressed, PMonopoly must be notified
         gui.rollButton.addActionListener(this);
@@ -153,7 +153,7 @@ public class PMonopoly implements ActionListener{
         for(Property p:propertyOrder){
             if(PropertyType.isRegularProperty(p)){
                 RegularProperty r = (RegularProperty) p;
-                System.out.println(r.getName() + " " + r.getHouseCost());
+                //System.out.println(r.getName() + " " + r.getHouseCost());
             }
         }
     }
